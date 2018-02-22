@@ -1,0 +1,24 @@
+
+<div class="row">
+  <form class="form-signin mt-4 col-md-8">
+    <img class="mb-4" src="assets/images/Batman_logo.png" alt="Brand Logo" width="72" height="40">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+    <div class="form-group">
+      <label class="float-left">Email address</label>
+      {{input class="form-control" placeholder="Aadhaar number" value=aadhaarNumber}}
+    </div>
+
+    <label class="float-left">Password</label>
+    {{input type="password" class="form-control" placeholder="Password" value=password}}
+
+    <div class="checkbox m-3 float-left">
+      <label>
+        <input type="checkbox" value="remember-me"> Begin Session
+      </label>
+    </div>
+
+    <button class="btn btn-outline-dark btn-block" type="submit" {{action "checkLogin"}}>Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; Copyrights to Wayne Enterprises</p>
+  </form>
+</div>

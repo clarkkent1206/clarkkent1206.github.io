@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  {{#link-to "home" class="navbar-brand"}}E-Toll Systems{{/link-to}}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        {{#link-to "home.about-us" class="nav-link"}}About Us{{/link-to}}
+      </li>
+
+      <li class="nav-item">
+        {{#link-to "sign-in" class="nav-link"}}Sign In{{/link-to}}
+      </li>
+      <li class="nav-item">
+        Dashboard
+      </li>
+
+      <li class="nav-item">
+        {{#link-to "sign-up" class="nav-link"}}Sign Up{{/link-to}}
+      </li>
+      <li class="nav-item">
+        {{#link-to "index" class="nav-link"}}Sign Out{{/link-to}}
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<main role="main" class="container">
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      {{outlet}}
+    </div>
+  </div>
+
+</main>
